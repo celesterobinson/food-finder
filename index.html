@@ -16,6 +16,15 @@
     Sit Down <input type="radio" value="" name="food-type"  id="sit-down"></input><br><br>
     <button type="submit" value="Bae's Hangry" onclick="getFood(); return false">Bae's Hangry</button>
     <h3 id="answer"></h3>
+    <p>Maybe you only want to eat food from a restaurant that starts with a certain letter? (Weird, but I won't judge you for it.) Type in the letter you want, and hit enter or click submit. I'll give you a list of the restaurants that start with that letter! (We might not have all letters, sorry. Please do not sue.)</p>
+    <form>
+        <label>What is your preferred letter?
+            <input id="letter" type="text" placeholder="Enter one letter here">
+        </label>
+            <button type="submit" onclick="createRestaurantList(); return false">Submit</button>
+    </form>
+    <h3 id="list"></h3>
+
     <script src="main.js"></script>
     <script src="data.js"></script>
 </body>

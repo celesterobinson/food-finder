@@ -26,4 +26,23 @@ var foodType;
     }
     return foodType;
 }
-    
+
+function createRestaurantList(letter) {
+    var letter = document.getElementById('letter').value;
+    var listLocation = document.getElementById('list');
+    var list = [];
+        for (var i = 0; i < allRestaurants.length; i++) {
+        if (allRestaurants[i].indexOf(letter) === 0) {
+            list.push(allRestaurants[i]);
+        } 
+    }
+    listLocation.innerText = list;
+}
+
+    userInput.on('keydown', function(event) {
+        var userInput = document.getElementById('letter');
+        var userLetter = document.getElementById('letter').value;
+        if (event.keyCode === 13) {
+            createRestaurantList(userLetter);
+        }
+    })
