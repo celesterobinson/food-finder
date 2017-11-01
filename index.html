@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Food Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Food Finder</h1>
+    <p>Can't decide what you and bae want to get to eat? Click the 'Bae's Hangry' button to get a random idea. If that idea doesn't tickle your fancy, click again for another random restaurant!</p>
+    Fast Food <input type="radio" value="fast-food" name="food-type" id="tier-one"></input><br>
+    Fast Casual <input type="radio" value="classy-fast-food" name="food-type"  id="tier-two"></input><br>
+    Sit Down <input type="radio" value="sit-down" name="food-type"  id="tier-three"></input><br>
+    Formal Sit Down <input type="radio" value="formal-sit-down" name="food-type"  id="tier-four"></input><br>
+    <button type="submit" value="Bae's Hangry" onclick="getFood">Bae's Hangry</button>
+    <h2 id="answer"></h2>
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
