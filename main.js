@@ -1,8 +1,6 @@
 function getFood() {
     var display = document.getElementById("answer");
-    var foodType = getFoodType();
-    var restaurant = getRandRestaurant(foodType)
-    display.innerText = restaurant;
+    display.innerText = getRandRestaurant(getFoodType());
 }
 
 function getRandRestaurant(foodType)  {
