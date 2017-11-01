@@ -9,13 +9,13 @@
 </head>
 <body>
     <h1>The Food Finder</h1>
-    <p>Can't decide what you and bae want to get to eat? Click the 'Bae's Hangry' button to get a random idea. If that idea doesn't tickle your fancy, click again for another random restaurant!</p>
-    Fast Food <input type="radio" value="fast-food" name="food-type" id="tier-one"></input><br>
-    Fast Casual <input type="radio" value="classy-fast-food" name="food-type"  id="tier-two"></input><br>
-    Sit Down <input type="radio" value="sit-down" name="food-type"  id="tier-three"></input><br>
-    Formal Sit Down <input type="radio" value="formal-sit-down" name="food-type"  id="tier-four"></input><br>
-    <button type="submit" value="Bae's Hangry" onclick="getFood">Bae's Hangry</button>
-    <h2 id="answer"></h2>
+    <h2>By Celeste Robinson</h2>
+    <p>Can't decide what you and bae want to get to eat? First select which food type you want, then click the 'Bae's Hangry' button to get a random idea. If that idea doesn't tickle your fancy, try again!</p>
+    Fast Food <input type="radio" value="" name="food-type" id="fast-food"></input><br>
+    Fast Casual <input type="radio" value="" name="food-type"  id="fast-casual"></input><br>
+    Sit Down <input type="radio" value="" name="food-type"  id="sit-down"></input><br><br>
+    <button type="submit" value="Bae's Hangry" onclick="getFood(); return false">Bae's Hangry</button>
+    <h3 id="answer"></h3>
     <script src="main.js"></script>
     <script src="data.js"></script>
 </body>
