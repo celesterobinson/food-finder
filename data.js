@@ -18,9 +18,29 @@ var fastFood = [
     "Mooyah",
     "In-N-Out Burger",
     "The Habit Burger Grill",
-    "El Pollo Loco",
     "Pita Pit",
     "Sonic Drive-In",
     "Taco Time",
     "Del Taco"
+]
+
+var fastCasual = [
+    "Costa Vida",
+    "Cafe Rio",
+    "El Pollo Loco",
+    "Chipotle Mexian Grill",
+    "Noodles & Co.",
+    "Panda Express",
+    "Cubby's Chicago Beef",
+    "Spitz",
+    "Pizzeria Limone",
+    "Aubergine & Company",
+    "Moochie's Meatballs & More!",
+    "Even Stevens Sandwiches",
+    "Sweeto Burrito",
+    "Wild Zucchini Grill",
+    "Malawis",
+    "Waffle Love",
+    "Bruges Waffles & Frites",
+    "CHOM Burger"
 ]
