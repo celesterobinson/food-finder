@@ -40,11 +40,11 @@ function createRestaurantList(letter) {
     var listLocation = document.getElementById('list');
     var list = [];
         for (var i = 0; i < allRestaurants.length; i++) {
-        if (allRestaurants[i].indexOf(letter) === 1) {
+        if (allRestaurants[i].indexOf(letter) === 0) {
             list.push(allRestaurants[i]);
         } 
     }
-    listLocation.innerText = list;
+    listLocation.innerText = list.join(', ');
 }
 
 var userInput = document.getElementById('letter');
