@@ -1,6 +1,13 @@
 function getFood() {
-    var display = document.getElementById("answer");
-    display.innerText = getRandRestaurant(getFoodType());
+    var answer = document.getElementById("answer");
+    var food = getFoodType();
+    var restaurant = getRandRestaurant(food);
+    if (food !== 'undefined') {
+        answer.innerText = restaurant;
+        document.getElementById('answer').style.color = '#d37825';
+    } else {
+        answer.innerText = '';
+    }
 }
 
 function getRandRestaurant(foodType)  {
@@ -22,6 +29,7 @@ var foodType;
     } else if (document.getElementById('sit-down').checked) {
         foodType = 'sit-down';
     } else {
+        foodType = 'undefined';
         alert("Please select a food type so Bae doesn't attack!");
     }
     return foodType;
@@ -32,17 +40,17 @@ function createRestaurantList(letter) {
     var listLocation = document.getElementById('list');
     var list = [];
         for (var i = 0; i < allRestaurants.length; i++) {
-        if (allRestaurants[i].indexOf(letter) === 0) {
+        if (allRestaurants[i].indexOf(letter) === 1) {
             list.push(allRestaurants[i]);
         } 
     }
     listLocation.innerText = list;
 }
 
-    userInput.on('keydown', function(event) {
-        var userInput = document.getElementById('letter');
+var userInput = document.getElementById('letter');
+    userInput.addEventListener('keydown', function(e) {
         var userLetter = document.getElementById('letter').value;
-        if (event.keyCode === 13) {
+        if (e.keyCode === 13) {
             createRestaurantList(userLetter);
         }
     })
