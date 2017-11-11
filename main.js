@@ -39,7 +39,7 @@ function createRestaurantList(letter) {
     var letter = document.getElementById('letter').value;
     var listLocation = document.getElementById('list');
     var list = [];
-        for (var i = 0; i < allRestaurants.length; i++) {
+    for (var i = 0; i < allRestaurants.length; i++) {
         if (allRestaurants[i].indexOf(letter) === 0) {
             list.push(allRestaurants[i]);
         } 
@@ -48,9 +48,9 @@ function createRestaurantList(letter) {
 }
 
 var userInput = document.getElementById('letter');
-    userInput.addEventListener('keydown', function(e) {
-        var userLetter = document.getElementById('letter').value;
-        if (e.keyCode === 13) {
-            createRestaurantList(userLetter);
-        }
-    })
+userInput.addEventListener('keydown', function(e) {
+    var userLetter = document.getElementById('letter').value;
+    if (e.keyCode === 13) {
+        createRestaurantList(userLetter);
+    }
+})
